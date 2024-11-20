@@ -58,6 +58,7 @@ const DialogTeamCard = ({ open, setOpen, data, onSuccess }: TeamCardProps) => {
   const [icon, setIcon] = useState<File>()
   const [logo, setLogo] = useState<File>()
   const [loading, setLoading] = useState(false)
+  
   // const { session, status } = useCurrentSession()
   const session = null
 

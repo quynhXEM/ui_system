@@ -16,6 +16,7 @@ const TeamsDropdown = () => {
   // const { directusRequest } = useDirectus()
   const { dictionary } = useDictionary()
   const { teams, updateTeams } = useTeams()
+
   // const router = useRouter()
   // const { lang } = useParams()
 
@@ -24,7 +25,7 @@ const TeamsDropdown = () => {
   const [anchorEl, setAnchorEl] = useState()
   const open = Boolean(anchorEl)
 
-  const handleClick = (event : any) => {
+  const handleClick = (event: any) => {
     // if (Array.isArray(teamslist) && teamslist.length > 0) {
     //   setAnchorEl(event.currentTarget)
     // } else {
@@ -36,7 +37,7 @@ const TeamsDropdown = () => {
     // setAnchorEl(null)
   }
 
-  const handleModeSwitch = (item : any) => {
+  const handleModeSwitch = (item: any) => {
     // Thay thế `any` bằng kiểu cụ thể hơn
     // updateTeams(item)
     // handleClose()
@@ -45,9 +46,7 @@ const TeamsDropdown = () => {
   const handleGetTeam = async () => {
     // try {
     //   const result = await directusRequest(readItems('teams', { fields: ['id', 'name', 'logo', 'status'] }))
-
     //   setTeamsList(result)
-
     //   if (result.length > 0) {
     //     updateTeams(result[0]) // Cập nhật teams từ danh sách
     //   }
@@ -59,7 +58,6 @@ const TeamsDropdown = () => {
   useEffect(() => {
     // handleGetTeam()
     // window.addEventListener('storage', handleGetTeam)
-
     // return () => {
     //   window.removeEventListener('storage', handleGetTeam)
     // }
